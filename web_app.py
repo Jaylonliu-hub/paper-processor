@@ -622,6 +622,7 @@ def download_batch_results(batch_id):
         pass
 
 if __name__ == '__main__':
-    # 创建templates文件夹
-    os.makedirs('templates', exist_ok=True)
-    app.run(debug=True, port=5000)
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+
