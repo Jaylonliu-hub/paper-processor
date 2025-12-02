@@ -1,0 +1,15 @@
+# PDF 学术论文结构化提取系统 - 依赖包
+
+# 核心依赖
+pymupdf4llm>=0.0.27
+instructor>=1.13.0
+openai>=2.8.1
+pydantic>=2.12.4
+
+# Web 界面
+gradio>=4.0.0
+flask>=2.0.0
+
+# 工具库
+pathlib
+eval_type_backport>=0.3.0  # Python 3.9 兼容性
